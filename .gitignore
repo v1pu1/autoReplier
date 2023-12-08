@@ -3,4 +3,4 @@ credentials.json
 services.json
 token.json
 label.json
-node_modules
+node_modules/
