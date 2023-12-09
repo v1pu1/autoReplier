@@ -48,6 +48,8 @@ const autorize = async () =>{
 
 
     //setting the token and saving it locally for more feasibility
+    // This will provide an object with the access_token and refresh_token.
+    // Save these somewhere safe so they can be used at a later time.
     const { tokens } = await oauth2Client.getToken(auth_code);
     oauth2Client.credentials = tokens;
     writeFileSync(process.env.TOKEN_PATH, JSON.stringify(tokens));
